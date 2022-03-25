@@ -1,0 +1,10 @@
+<!--HTML de Paises-->
+<div class="container">
+    <h1>Drag & Drop de una Lista Ordenada</h1>
+    <hr>
+    <ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)">
+        <li class="list-group-item" *ngFor="let pais of paises" cdkDrag>
+            {{pais.name}}
+        </li>
+    </ul>
+</div>
